@@ -7,7 +7,11 @@ public class CupDel : MonoBehaviour
         if (collision.CompareTag("Ball"))
         {
             collision.GetComponent<BallScript>().EndThisTurn();
+
+            if (collision.GetComponent<BallScript>().BouncedAmount != 0)
+            {
+                Destroy(gameObject);
+            }
         }
-        Destroy(gameObject);
     }
 }

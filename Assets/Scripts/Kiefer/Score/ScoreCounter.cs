@@ -9,28 +9,31 @@ public class ScoreCounter : MonoBehaviour
 
     private void OnTriggerEnter2D(Collider2D collision)
     {
-        if (collision.gameObject.name == "CupGoal")
+        if (this.gameObject.GetComponent<BallScript>().BouncedAmount != 0)
         {
-            if (collision.CompareTag("Blue"))
+            if (collision.gameObject.name == "CupGoal")
             {
-                if (turn.curPlayer == 1)
+                if (collision.CompareTag("Blue"))
                 {
-                    score.RedScore++;
+                    if (turn.curPlayer == 1)
+                    {
+                        score.RedScore++;
+                    }
+                    else if (turn.curPlayer == 2)
+                    {
+                        score.RedScore++;
+                    }
                 }
-                else if (turn.curPlayer == 2)
+                else if (collision.CompareTag("Red"))
                 {
-                    score.RedScore++;
-                }
-            }
-            else if (collision.CompareTag("Red"))
-            {
-                if (turn.curPlayer == 1)
-                {
-                    score.BlueScore++;
-                }
-                else if (turn.curPlayer == 2)
-                {
-                    score.BlueScore++;
+                    if (turn.curPlayer == 1)
+                    {
+                        score.BlueScore++;
+                    }
+                    else if (turn.curPlayer == 2)
+                    {
+                        score.BlueScore++;
+                    }
                 }
             }
         }
