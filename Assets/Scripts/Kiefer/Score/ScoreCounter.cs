@@ -11,7 +11,7 @@ public class ScoreCounter : MonoBehaviour
     {
         if (collision.gameObject.name == "CupGoal")
         {
-            if (collision.CompareTag("Red"))
+            if (collision.CompareTag("Blue"))
             {
                 if (turn.curPlayer == 1)
                 {
@@ -22,7 +22,7 @@ public class ScoreCounter : MonoBehaviour
                     score.RedScore++;
                 }
             }
-            else if (collision.CompareTag("Blue"))
+            else if (collision.CompareTag("Red"))
             {
                 if (turn.curPlayer == 1)
                 {
