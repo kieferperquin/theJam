@@ -7,7 +7,7 @@ public class BallScript : MonoBehaviour
     [SerializeField] TurnManager turn;
 
     [SerializeField] int BounceLimit = 3;
-    [SerializeField] int BouncedAmount = 0;
+    public int BouncedAmount = 0;
     public Vector2 startDir = new Vector2(3, 3);
     bool limitReached = false;
 
@@ -45,11 +45,6 @@ public class BallScript : MonoBehaviour
         if (collision.gameObject.name != "CupGoal")
         {
             Debug.Log("HitSide");
-            EndThisTurn();
-        }
-        else if (BouncedAmount == 0)
-        {
-            Debug.Log("NoBounce");
             EndThisTurn();
         }
     }
