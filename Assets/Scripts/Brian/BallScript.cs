@@ -42,8 +42,11 @@ public class BallScript : MonoBehaviour
     }
     private void OnTriggerEnter2D(Collider2D collision)
     {
-        Debug.Log("HitSide");
-        EndThisTurn();
+        if (collision.gameObject.name != "CupGoal")
+        {
+            Debug.Log("HitSide");
+            EndThisTurn();
+        }
     }
 
     void EndThisTurn()
