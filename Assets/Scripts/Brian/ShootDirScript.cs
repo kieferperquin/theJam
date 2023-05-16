@@ -10,14 +10,23 @@ public class ShootDirScript : MonoBehaviour
     [SerializeField] GameObject Ball;
     [SerializeField] int thisPlayer;
     [SerializeField] float ballSpeed = 3;
-    [SerializeField] float maxTurn;
-    [SerializeField] float minTurn;
+    [SerializeField] float maxTurn = 1;
+    float minTurn = 0;
 
     GameObject spawnedBall;
     // Start is called before the first frame update
     void Start()
     {
-        
+        if (thisPlayer == 1)
+        {
+            maxTurn = 1;
+            minTurn = 0;
+        }
+        else
+        {
+            maxTurn = 0;
+            maxTurn = -1;
+        }
     }
 
     // Update is called once per frame
@@ -27,8 +36,9 @@ public class ShootDirScript : MonoBehaviour
         {
             mousePosition = Camera.main.ScreenToWorldPoint(Input.mousePosition);
             Vector2 direction = (mousePosition - (Vector2)transform.position).normalized;
-            if (direction.y < 1 && direction.y > -1)
+            if (direction.x < maxTurn && direction.x > minTurn)
             {
+                Debug.Log(direction.x);
                 transform.up = direction;
             }
             if (Input.GetKeyDown(KeyCode.Mouse0) && turn.playing == false)

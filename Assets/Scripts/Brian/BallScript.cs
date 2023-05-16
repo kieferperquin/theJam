@@ -49,7 +49,7 @@ public class BallScript : MonoBehaviour
         }
     }
 
-    void EndThisTurn()
+    public void EndThisTurn()
     {
         Debug.Log("EndThisTurn");
         turn.EndTurn();
