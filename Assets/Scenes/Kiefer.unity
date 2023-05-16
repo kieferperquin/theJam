@@ -637,6 +637,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 169b07c4cfb496249a61f76a0fdb8d2b, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  turn: {fileID: 11400000, guid: 0ac0ade70582fff4f975eb1ff7e10ea4, type: 2}
   BounceLimit: 3
   BouncedAmount: 0
   startDir: {x: 3, y: 3}
@@ -788,6 +789,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   score: {fileID: 11400000, guid: f89842dad8a57504f8a98aabdb4bc601, type: 2}
+  turn: {fileID: 11400000, guid: 0ac0ade70582fff4f975eb1ff7e10ea4, type: 2}
 --- !u!4 &1286534787
 Transform:
   m_ObjectHideFlags: 0
