@@ -13,6 +13,7 @@ GameObject:
   - component: {fileID: 5058847774308404983}
   - component: {fileID: 5058847774308404984}
   - component: {fileID: 5058847774308404980}
+  - component: {fileID: 6192050395288369657}
   m_Layer: 0
   m_Name: Ball
   m_TagString: Ball
@@ -140,3 +141,17 @@ MonoBehaviour:
   BounceLimit: 7
   BouncedAmount: 0
   startDir: {x: 3, y: 3}
+--- !u!114 &6192050395288369657
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 5058847774308404985}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 7ddae0f1539d2a3479846e583df0dbe4, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  score: {fileID: 11400000, guid: f89842dad8a57504f8a98aabdb4bc601, type: 2}
+  RedShot: 1
