@@ -25,7 +25,7 @@ public class ShootDirScript : MonoBehaviour
         else
         {
             maxTurn = 0;
-            maxTurn = -1;
+            minTurn = -1;
         }
     }
 
@@ -40,14 +40,15 @@ public class ShootDirScript : MonoBehaviour
             {
                 Debug.Log(direction.x);
                 transform.up = direction;
-            }
-            if (Input.GetKeyDown(KeyCode.Mouse0) && turn.playing == false)
-            {
-                turn.playing = true;
-                Vector2 BallDir = new Vector3(ballSpeed * direction.x, ballSpeed * direction.y); ;
-                spawnedBall = Instantiate(Ball, new Vector2(gameObject.transform.position.x, gameObject.transform.position.y), Quaternion.identity);
-                spawnedBall.GetComponent<BallScript>().startDir = BallDir;
 
+                if (Input.GetKeyDown(KeyCode.Mouse0) && turn.playing == false)
+                {
+                    turn.playing = true;
+                    Vector2 BallDir = new Vector3(ballSpeed * direction.x, ballSpeed * direction.y); ;
+                    spawnedBall = Instantiate(Ball, new Vector2(gameObject.transform.position.x, gameObject.transform.position.y), Quaternion.identity);
+                    spawnedBall.GetComponent<BallScript>().startDir = BallDir;
+
+                }
             }
         }
     }
