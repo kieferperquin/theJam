@@ -873,5 +873,17 @@ PrefabInstance:
       propertyPath: m_Name
       value: Player 1 Shoot Pos
       objectReference: {fileID: 0}
+    - target: {fileID: 8590494796729807140, guid: 8689fad132fac894497f1a0ac57b6063, type: 3}
+      propertyPath: m_Color.b
+      value: 0.038330555
+      objectReference: {fileID: 0}
+    - target: {fileID: 8590494796729807140, guid: 8689fad132fac894497f1a0ac57b6063, type: 3}
+      propertyPath: m_Color.g
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 8590494796729807140, guid: 8689fad132fac894497f1a0ac57b6063, type: 3}
+      propertyPath: m_Color.r
+      value: 1
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 8689fad132fac894497f1a0ac57b6063, type: 3}
