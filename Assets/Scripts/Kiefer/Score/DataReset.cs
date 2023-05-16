@@ -2,7 +2,7 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 
-public class ScoreReset : MonoBehaviour
+public class DataReset : MonoBehaviour
 {
     public ScoreData score;
     public TurnManager turn;
