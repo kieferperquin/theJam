@@ -11,13 +11,27 @@ public class ScoreCounter : MonoBehaviour
     {
         if (collision.gameObject.name == "CupGoal")
         {
-            if (turn.curPlayer == 1)
+            if (collision.CompareTag("Red"))
             {
-                score.RedScore++;
+                if (turn.curPlayer == 1)
+                {
+                    score.RedScore++;
+                }
+                else if (turn.curPlayer == 2)
+                {
+                    score.RedScore++;
+                }
             }
-            else if (turn.curPlayer == 2)
+            else if (collision.CompareTag("Blue"))
             {
-                score.BlueScore++;
+                if (turn.curPlayer == 1)
+                {
+                    score.BlueScore++;
+                }
+                else if (turn.curPlayer == 2)
+                {
+                    score.BlueScore++;
+                }
             }
         }
     }
