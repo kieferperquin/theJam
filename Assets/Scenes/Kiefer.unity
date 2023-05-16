@@ -617,6 +617,7 @@ GameObject:
   - component: {fileID: 1225680252}
   - component: {fileID: 1225680251}
   - component: {fileID: 1225680250}
+  - component: {fileID: 1225680255}
   m_Layer: 0
   m_Name: Ball
   m_TagString: Untagged
@@ -638,6 +639,8 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   BounceLimit: 3
   BouncedAmount: 0
+  startDirX: 3
+  startDirY: 3
 --- !u!50 &1225680251
 Rigidbody2D:
   serializedVersion: 4
@@ -736,11 +739,70 @@ Transform:
   m_GameObject: {fileID: 1225680249}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
   m_LocalPosition: {x: -2.7, y: 1.36, z: 0}
-  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_LocalScale: {x: 0.5, y: 0.5, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 0}
   m_RootOrder: 5
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &1225680255
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1225680249}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 7ddae0f1539d2a3479846e583df0dbe4, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  score: {fileID: 11400000, guid: f89842dad8a57504f8a98aabdb4bc601, type: 2}
+  RedShot: 1
+--- !u!1 &1286534785
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 1286534787}
+  - component: {fileID: 1286534786}
+  m_Layer: 0
+  m_Name: ScriptManager
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!114 &1286534786
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1286534785}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 2d343037502cc5d438175ba3468b1698, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  score: {fileID: 11400000, guid: f89842dad8a57504f8a98aabdb4bc601, type: 2}
+--- !u!4 &1286534787
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1286534785}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 0}
+  m_RootOrder: 7
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &1841220940
 GameObject:
@@ -870,7 +932,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 2517026288828759613, guid: d3939271b2299b24d942698ed62ae372, type: 3}
       propertyPath: m_LocalPosition.x
-      value: 4.8
+      value: 4.5
       objectReference: {fileID: 0}
     - target: {fileID: 2517026288828759613, guid: d3939271b2299b24d942698ed62ae372, type: 3}
       propertyPath: m_LocalPosition.y
