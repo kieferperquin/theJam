@@ -47,6 +47,11 @@ public class BallScript : MonoBehaviour
             Debug.Log("HitSide");
             EndThisTurn();
         }
+        else if (BouncedAmount == 0)
+        {
+            Debug.Log("NoBounce");
+            EndThisTurn();
+        }
     }
 
     public void EndThisTurn()
