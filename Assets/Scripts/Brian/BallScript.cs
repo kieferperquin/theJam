@@ -33,10 +33,10 @@ public class BallScript : MonoBehaviour
         }    
 
         BouncedAmount += 1;
-        Debug.Log("Bounced: " + BouncedAmount);
+        //Debug.Log("Bounced: " + BouncedAmount);
         if (BouncedAmount >= BounceLimit)
         {
-            Debug.Log("Over Limit");
+            //Debug.Log("Over Limit");
             limitReached = true;
         }
     }
@@ -44,14 +44,14 @@ public class BallScript : MonoBehaviour
     {
         if (collision.gameObject.name != "CupGoal")
         {
-            Debug.Log("HitSide");
+            //Debug.Log("HitSide");
             EndThisTurn();
         }
     }
 
     public void EndThisTurn()
     {
-        Debug.Log("EndThisTurn");
+        //Debug.Log("EndThisTurn");
         turn.EndTurn();
         Destroy(gameObject);
     }    
