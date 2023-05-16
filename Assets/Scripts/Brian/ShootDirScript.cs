@@ -38,7 +38,6 @@ public class ShootDirScript : MonoBehaviour
             Vector2 direction = (mousePosition - (Vector2)transform.position).normalized;
             if (direction.x < maxTurn && direction.x > minTurn)
             {
-                Debug.Log(direction.x);
                 transform.up = direction;
 
                 if (Input.GetKeyDown(KeyCode.Mouse0) && turn.playing == false)
