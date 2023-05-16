@@ -639,8 +639,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   BounceLimit: 3
   BouncedAmount: 0
-  startDirX: 3
-  startDirY: 3
+  startDir: {x: 3, y: 3}
 --- !u!50 &1225680251
 Rigidbody2D:
   serializedVersion: 4
