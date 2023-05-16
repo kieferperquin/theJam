@@ -4,6 +4,8 @@ using UnityEngine;
 
 public class BallScript : MonoBehaviour
 {
+    [SerializeField] TurnManager turn;
+
     [SerializeField] int BounceLimit = 3;
     [SerializeField] int BouncedAmount = 0;
     public Vector2 startDir = new Vector2(3, 3);
@@ -27,7 +29,7 @@ public class BallScript : MonoBehaviour
         Debug.Log(collision.gameObject.name);
         if (limitReached)
         {
-            Destroy(gameObject);
+            EndThisTurn();
         }    
 
         BouncedAmount += 1;
@@ -41,6 +43,13 @@ public class BallScript : MonoBehaviour
     private void OnTriggerEnter2D(Collider2D collision)
     {
         Debug.Log("HitSide");
-        Destroy(gameObject);
+        EndThisTurn();
     }
+
+    void EndThisTurn()
+    {
+        Debug.Log("EndThisTurn");
+        turn.EndTurn();
+        Destroy(gameObject);
+    }    
 }
