@@ -6,15 +6,14 @@ public class BallScript : MonoBehaviour
 {
     [SerializeField] int BounceLimit = 3;
     [SerializeField] int BouncedAmount = 0;
-    [SerializeField] float startDirX = 3;
-    [SerializeField] float startDirY = 3;
+    public Vector2 startDir = new Vector2(3, 3);
     bool limitReached = false;
 
     // Start is called before the first frame update
     void Start()
     {
         //GetComponent<Rigidbody2D>().velocity = new Vector2(3, GetComponent<Rigidbody2D>().velocity.y);
-        GetComponent<Rigidbody2D>().velocity = new Vector2(startDirX, startDirY);
+        GetComponent<Rigidbody2D>().velocity = startDir;
     }
 
     // Update is called once per frame
