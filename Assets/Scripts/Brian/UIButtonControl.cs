@@ -28,4 +28,9 @@ public class UIButtonControl : MonoBehaviour
         UIManage.pausedGame = false;
         Time.timeScale = 1f;
     }
+    public void QuitGame()
+    {
+        Application.Quit();
+        Debug.Log("Quit");
+    }
 }
