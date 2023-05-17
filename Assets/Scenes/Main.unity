@@ -2568,6 +2568,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   score: {fileID: 11400000, guid: f89842dad8a57504f8a98aabdb4bc601, type: 2}
+  MaxScore: 3
 --- !u!1 &2031517769
 GameObject:
   m_ObjectHideFlags: 0
