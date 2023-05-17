@@ -353,6 +353,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   turn: {fileID: 11400000, guid: 0ac0ade70582fff4f975eb1ff7e10ea4, type: 2}
+  UIManage: {fileID: 11400000, guid: 0f7cec4cae1f27b4b99bc6ca34fac4df, type: 2}
   Ball: {fileID: 5058847774308404985, guid: 0ea2ef05734b3304bb0b838ee1362f64, type: 3}
   thisPlayer: 1
   ballSpeed: 10

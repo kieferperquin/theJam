@@ -6,10 +6,14 @@ using UnityEngine;
 public class UIManager : ScriptableObject
 {
     public bool pausedGame;
+    public bool finished;
+    public bool start;
     //ANY settings
 
     public void Reset()
     {
         pausedGame = false;
+        finished = false;
+        start = true;
     }
 }
