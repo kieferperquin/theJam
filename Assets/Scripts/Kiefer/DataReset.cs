@@ -10,6 +10,11 @@ public class DataReset : MonoBehaviour
 
     void Start()
     {
+        Reset();
+    }
+
+    public void Reset()
+    {
         score.ScoreReset();
         turn.Reset();
         UIManage.Reset();
