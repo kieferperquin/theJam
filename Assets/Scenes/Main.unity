@@ -3253,6 +3253,18 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 1522381756}
     m_Modifications:
+    - target: {fileID: 5977432487078144687, guid: 8689fad132fac894497f1a0ac57b6063, type: 3}
+      propertyPath: m_RootOrder
+      value: 6
+      objectReference: {fileID: 0}
+    - target: {fileID: 6428820996270967488, guid: 8689fad132fac894497f1a0ac57b6063, type: 3}
+      propertyPath: m_RootOrder
+      value: 2
+      objectReference: {fileID: 0}
+    - target: {fileID: 7923716515633838026, guid: 8689fad132fac894497f1a0ac57b6063, type: 3}
+      propertyPath: m_RootOrder
+      value: 3
+      objectReference: {fileID: 0}
     - target: {fileID: 8590494795687545320, guid: 8689fad132fac894497f1a0ac57b6063, type: 3}
       propertyPath: m_RootOrder
       value: 0
@@ -3300,6 +3312,10 @@ PrefabInstance:
     - target: {fileID: 8590494795687545322, guid: 8689fad132fac894497f1a0ac57b6063, type: 3}
       propertyPath: m_Name
       value: Player 1 Shoot Pos
+      objectReference: {fileID: 0}
+    - target: {fileID: 9205980556060449493, guid: 8689fad132fac894497f1a0ac57b6063, type: 3}
+      propertyPath: m_RootOrder
+      value: 7
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 8689fad132fac894497f1a0ac57b6063, type: 3}
