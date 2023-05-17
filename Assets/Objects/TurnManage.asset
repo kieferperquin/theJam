@@ -12,5 +12,5 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 4108747d47e69e747a2eebd6814bd07f, type: 3}
   m_Name: TurnManage
   m_EditorClassIdentifier: 
-  playing: 1
-  curPlayer: 0
+  playing: 0
+  curPlayer: 1

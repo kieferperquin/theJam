@@ -17,23 +17,30 @@ public class UIController : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-        if (UIManage.start)
+        if (UIManage.pausedGame)
         {
-            startScreen.SetActive(true);
-            pauseScreen.SetActive(false);
-            finishScreen.SetActive(false);
-        }
-        else if (UIManage.finished)
-        {
-            finishScreen.SetActive(true);
-            pauseScreen.SetActive(false);
-            startScreen.SetActive(false);
+            if (UIManage.start)
+            {
+                startScreen.SetActive(true);
+                pauseScreen.SetActive(false);
+                finishScreen.SetActive(false);
+            }
+            else if (UIManage.finished)
+            {
+                finishScreen.SetActive(true);
+                pauseScreen.SetActive(false);
+                startScreen.SetActive(false);
+            }
+            else
+            {
+                pauseScreen.SetActive(true);
+                startScreen.SetActive(false);
+                finishScreen.SetActive(false);
+            }
         }
         else
         {
-            pauseScreen.SetActive(true);
-            startScreen.SetActive(false);
-            finishScreen.SetActive(false);
+            gameObject.SetActive(false);
         }
 
     }

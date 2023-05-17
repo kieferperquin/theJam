@@ -12,7 +12,7 @@ public class UIManager : ScriptableObject
 
     public void Reset()
     {
-        pausedGame = false;
+        pausedGame = true;
         finished = false;
         start = true;
     }
