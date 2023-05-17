@@ -5,6 +5,7 @@ using UnityEngine;
 public class WinCon : MonoBehaviour
 {
     public ScoreData score;
+    [SerializeField] PauseScript pauseScr;
     [SerializeField] UIManager UIManage;
     public int MaxScore;
     private bool RedWon;
@@ -29,6 +30,8 @@ public class WinCon : MonoBehaviour
     void SendWinner(int PlayerWon)
     {
         UIManage.wonPlayer = PlayerWon;
+        pauseScr.Pause();
+        UIManage.finished = true;
         //get a script that puts up a screen for the winner based on what number (1 or 2)
         //and put a line here that send that number (1 or 2) to that script
     }
