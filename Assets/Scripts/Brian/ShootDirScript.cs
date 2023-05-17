@@ -13,6 +13,7 @@ public class ShootDirScript : MonoBehaviour
     [SerializeField] float ballSpeed = 3;
     [SerializeField] float maxTurn = 1;
     float minTurn = 0;
+    int totalShots;
 
     GameObject spawnedBall;
     // Start is called before the first frame update
@@ -46,6 +47,7 @@ public class ShootDirScript : MonoBehaviour
                     if (Input.GetKeyDown(KeyCode.Mouse0) && turn.playing == false)
                     {
                         turn.playing = true;
+                        totalShots += 1;
                         Vector2 BallDir = new Vector3(ballSpeed * direction.x, ballSpeed * direction.y); ;
                         spawnedBall = Instantiate(Ball, new Vector2(gameObject.transform.position.x, gameObject.transform.position.y), Quaternion.identity);
                         spawnedBall.GetComponent<BallScript>().startDir = BallDir;
