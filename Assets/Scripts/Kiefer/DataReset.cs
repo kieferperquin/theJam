@@ -11,6 +11,7 @@ public class DataReset : MonoBehaviour
     void Start()
     {
         Reset();
+        Time.timeScale = 1f;
     }
 
     public void Reset()
