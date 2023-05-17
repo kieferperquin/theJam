@@ -1766,6 +1766,11 @@ Transform:
   m_Father: {fileID: 0}
   m_RootOrder: 4
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!1 &1227924136 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 8590494796729807142, guid: 8689fad132fac894497f1a0ac57b6063, type: 3}
+  m_PrefabInstance: {fileID: 1082729391}
+  m_PrefabAsset: {fileID: 0}
 --- !u!1 &1258366190
 GameObject:
   m_ObjectHideFlags: 0
@@ -4120,7 +4125,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 9e549fe4eead57f4a94b22a09ede57c9, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  FollowLocation: {fileID: 0}
+  FollowLocation: {fileID: 1227924136}
   enableRay: 1
 --- !u!212 &2104331169
 SpriteRenderer:

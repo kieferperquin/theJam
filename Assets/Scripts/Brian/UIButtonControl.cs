@@ -26,5 +26,6 @@ public class UIButtonControl : MonoBehaviour
     {
         UIManage.start = false;
         UIManage.pausedGame = false;
+        Time.timeScale = 1f;
     }
 }
