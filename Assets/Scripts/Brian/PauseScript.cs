@@ -4,7 +4,7 @@ using UnityEngine;
 
 public class PauseScript : MonoBehaviour
 {
-    public static bool gameIsPaused = false;
+    [SerializeField] UIManager UIManage;
     public GameObject pauseMenuUI;
     // Start is called before the first frame update
     void Start()
@@ -17,7 +17,7 @@ public class PauseScript : MonoBehaviour
     {
         if (Input.GetKeyDown(KeyCode.Escape))
         {
-            if (gameIsPaused)
+            if (UIManage.pausedGame)
             {
                 Resume();
             }
@@ -31,12 +31,12 @@ public class PauseScript : MonoBehaviour
     {
         pauseMenuUI.SetActive(false);
         Time.timeScale = 1f;
-        gameIsPaused = false;
+        UIManage.pausedGame = false;
     }
     void Pause()
     {
         pauseMenuUI.SetActive(true);
         Time.timeScale = 0f;
-        gameIsPaused = true;
+        UIManage.pausedGame = true;
     }
 }
