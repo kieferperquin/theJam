@@ -7,6 +7,7 @@ public class UIManager : ScriptableObject
 {
     public bool pausedGame;
     public bool finished;
+    public int wonPlayer;
     public bool start;
     //ANY settings
 
@@ -15,5 +16,6 @@ public class UIManager : ScriptableObject
         pausedGame = true;
         finished = false;
         start = true;
+        wonPlayer = 0;
     }
 }

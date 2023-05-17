@@ -20,7 +20,7 @@ public class UIButtonControl : MonoBehaviour
     }
     public void Restart()
     {
-        //SceneManager.LoadScene(); RELOAD SCENE
+        SceneManager.LoadScene("Main");
     }
     public void StartGame()
     {
